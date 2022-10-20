@@ -15,18 +15,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var diceImageViewOne: UIImageView!
     // Second Dice in main storyboard (right side) connection
     @IBOutlet weak var diceImageViewTwo: UIImageView!
+    
+    // Define dice image array
+    let diceImages = [ UIImage(named: "DiceOne"),
+                       UIImage(named: "DiceTwo"),
+                       UIImage(named: "DiceThree"),
+                       UIImage(named: "DiceFour"),
+                       UIImage(named: "DiceFive"),
+                       UIImage(named: "DiceSix") ]
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Load Dice six
-        diceImageViewOne.image = UIImage(imageLiteralResourceName: "DiceSix.png")
-        
-        // Load Dice two
-        diceImageViewTwo.image = UIImage(imageLiteralResourceName: "DiceTwo.png")
-        
         // Round Button
         Button.layer.cornerRadius = 10
         Button.clipsToBounds = true
+    }
+    // Triggered when button is pressed
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        diceImageViewOne.image = diceImages.randomElement()!
+        diceImageViewTwo.image = diceImages[Int.random(in: 0...5)]
     }
 }
 
