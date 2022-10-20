@@ -34,7 +34,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SE5-sw-4f9">
-                                <rect key="frame" x="153" y="558" width="109" height="59"/>
+                                <rect key="frame" x="153" y="604" width="109" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -47,6 +47,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="Button" destination="SE5-sw-4f9" id="lUp-NY-TRk"/>
+                        <outlet property="diceImageViewOne" destination="VP7-CS-8Xe" id="HFb-hw-zdl"/>
+                        <outlet property="diceImageViewTwo" destination="mvI-UO-IZc" id="CI3-C3-K3Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
